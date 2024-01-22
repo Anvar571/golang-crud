@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "news" (
+    "id" SERIAL PRIMARY KEY,
+    "title" VARCHAR(255) NOT NULL,
+    "image_url" VARCHAR(255),
+    "content" TEXT NOT NULL,
+    "created_at" TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+);
